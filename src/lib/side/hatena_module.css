@@ -78,29 +78,28 @@
 .hatena-module-entries-access-ranking,
 .hatena-module-related-entries {
   ul.hatena-urllist {
-    @apply flex flex-col gap-4;
+    @apply flex flex-col gap-8;
 
     li.urllist-item {
       .urllist-item-inner {
-        @apply flex flex-wrap items-center gap-1;
-
+        @apply relative;
         .urllist-date-link {
-          @apply order-3 m-1 px-1 py-0.5 text-xs text-gray-700;
+          @apply absolute top-0 left-0 z-100 m-1 rounded-sm bg-white/50 px-1 py-0.5 text-xs text-gray-700 hover:bg-slate-200/70;
         }
 
         .urllist-image-link {
-          @apply order-0 float-left block size-fit max-w-full shrink-0 self-center overflow-hidden;
+          @apply block size-fit max-w-full self-center overflow-hidden;
 
           img.urllist-image {
-            @apply m-0! size-fit max-w-full overflow-hidden bg-cover transition-transform hover:scale-110;
+            @apply !m-0 aspect-16/9 max-w-full overflow-hidden object-cover transition-transform hover:scale-110;
           }
         }
 
         .urllist-title-link {
-          @apply order-1 line-clamp-2 hover:underline;
+          @apply line-clamp-2 hover:underline;
         }
         .urllist-categories {
-          @apply order-2 flex flex-wrap text-sm;
+          @apply flex flex-wrap text-sm;
           a {
             @apply bg-ghost/50 hover:bg-primary rounded-xs px-1.5 py-0.5 text-gray-700 transition-all hover:text-white;
           }
