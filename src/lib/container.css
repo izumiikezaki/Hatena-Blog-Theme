@@ -5,7 +5,7 @@
 }
 
 #top-box {
-  @apply px-4 mx-auto max-w-[600px] xl:w-[900px];
+  @apply mx-auto max-w-[600px] px-4 xl:w-[900px];
 }
 /* 2カラムレイアウト */
 #content-inner {
@@ -13,10 +13,12 @@
   @apply xl:flex-row xl:items-start xl:justify-center;
 
   #wrapper {
-    @apply px-4 w-full max-w-[600px] xl:w-[600px];
+    @apply w-full max-w-[600px];
+    @apply md:px-4 xl:w-[600px];
   }
 
   #box2 {
-    @apply px-4 w-full max-w-[600px] xl:w-[300px] mt-10;
+    @apply mt-10 w-full max-w-[600px];
+    @apply md:px-4 xl:w-[300px];
   }
 }
