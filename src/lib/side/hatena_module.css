@@ -15,7 +15,7 @@
     @apply flex flex-col items-center;
 
     .profile-icon-link {
-      @apply rounded-full bg-white p-1 shadow mb-3;
+      @apply mb-3 rounded-full bg-white p-1 shadow;
       .profile-icon {
         @apply rounded-full;
       }
@@ -81,16 +81,15 @@
     @apply flex flex-col gap-4;
 
     li.urllist-item {
-
       .urllist-item-inner {
-        @apply items-center gap-1 flex flex-wrap;
+        @apply flex flex-wrap items-center gap-1;
 
         .urllist-date-link {
-          @apply m-1 px-1 py-0.5 text-xs text-gray-700 order-3;
+          @apply order-3 m-1 px-1 py-0.5 text-xs text-gray-700;
         }
 
         .urllist-image-link {
-          @apply self-center float-left block size-fit max-w-full shrink-0 overflow-hidden order-0;
+          @apply order-0 float-left block size-fit max-w-full shrink-0 self-center overflow-hidden;
 
           img.urllist-image {
             @apply m-0! size-fit max-w-full overflow-hidden bg-cover transition-transform hover:scale-110;
@@ -98,10 +97,10 @@
         }
 
         .urllist-title-link {
-          @apply line-clamp-2 hover:underline order-1;
+          @apply order-1 line-clamp-2 hover:underline;
         }
         .urllist-categories {
-          @apply flex flex-wrap text-sm order-2;
+          @apply order-2 flex flex-wrap text-sm;
           a {
             @apply bg-ghost/50 hover:bg-primary rounded-xs px-1.5 py-0.5 text-gray-700 transition-all hover:text-white;
           }
@@ -115,11 +114,12 @@
 .hatena-module-archive {
   .archive-module-calendar {
     select.archive-module-calendar-selector {
-      @apply bg-gray-200 py-1 rounded border-1 border-gray-300;
+      @apply rounded border-1 border-gray-300 bg-gray-200 py-1;
     }
     .calendar-day {
-      @apply p-0.5 ;
-      span, a{
+      @apply p-0.5;
+      span,
+      a {
         @apply px-0.5 py-1;
       }
       a {
