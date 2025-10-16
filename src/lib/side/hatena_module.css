@@ -99,7 +99,7 @@
         }
 
         .urllist-title-link {
-          @apply line-clamp-2 font-bold hover:underline;
+          @apply line-clamp-2 font-bold;
         }
         .urllist-categories {
           @apply flex flex-wrap text-xs;
