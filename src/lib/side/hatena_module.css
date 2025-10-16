@@ -88,7 +88,10 @@
         }
 
         .urllist-image-link {
-          @apply block size-fit max-w-full self-center overflow-hidden;
+          @apply  self-center block size-fit overflow-hidden;
+          /* スマホサイズだと親のパディング分も超えて配置 */
+          @apply -mx-4 max-w-[calc(100%+var(--spacing-4))];
+          @apply md:mx-0 md:max-w-full;
 
           img.urllist-image {
             @apply !m-0 aspect-16/9 max-w-full overflow-hidden object-cover transition-transform hover:scale-110;
@@ -162,10 +165,9 @@
 /** 執筆者リスト */
 .hatena-module-authors-list {
   /** TODO:動作未確認 */
-    .authors-user-icon {
-        @apply rounded-full;
-    }
-    .authors-user-name {
-
-    }
+  .authors-user-icon {
+    @apply rounded-full;
+  }
+  .authors-user-name {
+  }
 }
