@@ -2,7 +2,8 @@
 .hatena-module {
   @apply mb-20 text-sm sm:text-xs;
   .hatena-module-title {
-    @apply mb-2 border-b border-gray-200 pb-1 text-xl tracking-wider;
+    @apply border-gray-200 pb-1 text-xl tracking-wider;
+    /*@apply border-b mb-2;*/
     a {
       @apply no-underline hover:underline;
     }
@@ -96,10 +97,10 @@
         }
 
         .urllist-title-link {
-          @apply line-clamp-2 hover:underline;
+          @apply line-clamp-2 font-bold hover:underline;
         }
         .urllist-categories {
-          @apply flex flex-wrap text-sm;
+          @apply flex flex-wrap text-xs;
           a {
             @apply bg-ghost/50 hover:bg-primary rounded-xs px-1.5 py-0.5 text-gray-700 transition-all hover:text-white;
           }
