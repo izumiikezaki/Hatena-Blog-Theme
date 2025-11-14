@@ -1,6 +1,6 @@
 /* 記事内の書式 */
 .entry-content {
-  @apply text-base text-gray-700;
+  @apply text-base text-gray-950 mb-32;
 
   img,
   video {
@@ -12,7 +12,7 @@
   }
 
   p {
-    @apply my-4;
+    @apply my-10;
   }
 
   h1,
@@ -21,7 +21,7 @@
   h4,
   h5,
   h6 {
-    @apply mt-4 mb-3.5;
+    @apply mt-20 mb-4 font-bold;
   }
 
   /** # */
