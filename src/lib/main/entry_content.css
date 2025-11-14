@@ -125,6 +125,13 @@
   }
 
   .table-of-contents {
-    @apply my-4 border border-gray-200 p-4 pl-8;
+    &::before {
+        content: "Table of Contents";
+        @apply mb-2 block font-bold;
+    }
+    @apply my-4 border border-gray-200 p-4 pl-8 drop-shadow bg-white rounded;
+    li{
+      @apply list-none;
+    }
   }
 }
