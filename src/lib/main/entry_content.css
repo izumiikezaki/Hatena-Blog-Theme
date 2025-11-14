@@ -1,6 +1,6 @@
 /* 記事内の書式 */
 .entry-content {
-  @apply text-sm/6 text-gray-700;
+  @apply text-base text-gray-700;
 
   img,
   video {
