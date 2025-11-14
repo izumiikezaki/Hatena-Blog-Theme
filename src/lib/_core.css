@@ -49,10 +49,11 @@ body {
     @apply grid grid-cols-1 gap-1 sm:grid-cols-2;
 
     .archive-entry {
-      @apply mx-4 mb-12 flex flex-col text-sm;
+      @apply mx-4 my-12 flex flex-col text-sm;
       /*@apply leading-snug;*/
 
       .categories {
+        @apply order-last;
         @apply my-1 flex flex-wrap gap-1 text-xs;
         a {
           @apply bg-primary-light hover:bg-accent rounded-xs px-1.5 py-0.5 text-white transition-all;
@@ -71,7 +72,7 @@ body {
       }
 
       .entry-thumb {
-        @apply w-full bg-cover;
+        @apply w-full bg-cover my-2;
       }
 
       .entry-description {
