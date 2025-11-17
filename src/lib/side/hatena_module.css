@@ -52,7 +52,7 @@
     @apply box-border flex w-full items-center rounded border border-gray-200;
   }
   .search-module-input {
-    @apply h-5 flex-1 border-0 bg-transparent p-1.5 text-gray-900 outline-none;
+    @apply h-5 flex-1 border-0 p-1.5 text-gray-900 outline-none;
   }
   .search-module-button {
     @apply mr-0.5 h-6 w-6 cursor-pointer overflow-hidden text-transparent opacity-50 hover:opacity-85;
