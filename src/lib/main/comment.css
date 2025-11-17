@@ -43,6 +43,6 @@
 
   /* 「コメントを書く」ボタン */
   .leave-comment-title {
-    @apply ml-auto block w-fit rounded border border-gray-200 px-4 py-2.5 text-xs text-gray-600 transition-all hover:bg-gray-200;
+    @apply ml-auto block w-fit rounded border border-white/60 px-4 py-2.5 text-xs text-gray-600 transition-all hover:bg-white/60 hover:text-gray-700;
   }
 }

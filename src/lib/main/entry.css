@@ -26,7 +26,13 @@
     .entry-categories {
       @apply flex flex-wrap gap-1 text-xs;
       a {
-        @apply bg-ghost/50 hover:bg-primary rounded-xs px-1.5 py-0.5 text-gray-700 transition-all hover:text-white;
+        &::before {
+          content: "";
+          height: var(--text-xs);
+          width: var(--text-xs);
+          @apply block bg-gray-600;
+        }
+        @apply flex items-center gap-1 bg-ghost/50 hover:bg-primary rounded-xs px-1.5 py-0.5 text-gray-700 transition-all hover:text-white;
       }
     }
   }
@@ -46,13 +52,13 @@
   /* 記事下 */
   .entry-footer {
     .entry-footer-section {
-      @apply mb-2 flex flex-wrap items-center justify-between gap-2 text-xs text-gray-600;
+      @apply mb-2 flex flex-wrap items-center justify-between gap-2 text-xs text-gray-800;
       .entry-footer-time {
-        @apply flex-grow font-bold hover:underline;
+        @apply flex-grow font-bold;
       }
 
       .entry-footer-subscribe {
-        @apply m-0 rounded-sm px-1.5 py-1 transition-colors hover:bg-gray-300/50;
+        @apply m-0 rounded-sm px-1.5 py-1 transition-colors hover:bg-white/60;
       }
     }
 
