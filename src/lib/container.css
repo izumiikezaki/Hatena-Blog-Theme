@@ -13,12 +13,12 @@
   @apply xl:flex-row xl:items-start xl:justify-center;
 
   #wrapper {
-    @apply w-full max-w-[600px];
-    @apply md:px-4 xl:w-[600px];
+    @apply w-full max-w-[600px] px-4;
+    @apply xl:w-[600px];
   }
 
   #box2 {
-    @apply mt-10 w-full max-w-[600px];
-    @apply md:px-4 xl:w-[300px];
+    @apply mt-10 w-full max-w-[600px] px-4;
+    @apply xl:w-[300px];
   }
 }
