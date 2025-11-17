@@ -91,7 +91,7 @@
           @apply block size-fit max-w-full self-center overflow-hidden;
 
           img.urllist-image {
-            @apply !m-0 aspect-16/9 max-w-full overflow-hidden object-cover transition-transform hover:scale-110;
+            @apply !m-0 aspect-16/9 max-w-full overflow-hidden object-cover transition-transform duration-200 hover:scale-105;
           }
         }
 
