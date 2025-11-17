@@ -7,7 +7,7 @@
     @apply h-auto max-w-full;
   }
 
-  a {
+  a.keyword {
     @apply underline;
   }
 
@@ -143,7 +143,10 @@
     }
     @apply border border-gray-200 p-4 pl-8 drop-shadow bg-white/80 rounded;
     li{
-      @apply list-none my-2;
+      @apply list-none my-2 ;
+      a{
+        @apply hover:bg-ghost/50;
+      }
     }
   }
 }
