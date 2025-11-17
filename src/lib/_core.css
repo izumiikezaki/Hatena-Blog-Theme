@@ -1,6 +1,6 @@
 body {
   /** 初期設定 */
-  @apply font-sans leading-relaxed text-gray-900 text-base;
+  @apply font-sans leading-relaxed text-gray-950 text-base bg-ghost;
 
   /* 下線のオフセット*/
   @apply underline-offset-2;

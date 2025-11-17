@@ -1,6 +1,6 @@
 /* 記事内の書式 */
 .entry-content {
-  @apply text-base text-gray-950 mb-32;
+  @apply text-base mb-32;
 
   img,
   video {
@@ -129,9 +129,9 @@
         content: "Table of Contents";
         @apply mb-2 block font-bold;
     }
-    @apply border border-gray-200 p-4 pl-8 drop-shadow bg-white rounded;
+    @apply border border-gray-200 p-4 pl-8 drop-shadow bg-white/80 rounded;
     li{
-      @apply list-none;
+      @apply list-none my-2;
     }
   }
 }

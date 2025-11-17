@@ -96,7 +96,7 @@
         }
 
         .urllist-title-link {
-          @apply line-clamp-2 hover:underline;
+          @apply line-clamp-2 hover:underline text-base my-2;
         }
         .urllist-categories {
           @apply flex flex-wrap text-sm;

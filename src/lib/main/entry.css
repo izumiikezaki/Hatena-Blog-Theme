@@ -8,11 +8,11 @@
     .entry-date {
       @apply mb-2 flex gap-2 text-xs font-bold;
       a {
-        @apply text-gray-700 no-underline;
+        @apply text-gray-800 no-underline;
       }
 
       .date-last-updated {
-        @apply ml-0 flex items-center gap-0.5 text-gray-500;
+        @apply ml-0 flex items-center gap-0.5 text-gray-800/60;
         svg {
           @apply inline-block size-2.5;
         }
@@ -20,7 +20,7 @@
     }
 
     .entry-title {
-      @apply mb-1 text-2xl font-bold text-gray-700;
+      @apply mb-1 text-2xl font-bold;
     }
 
     .entry-categories {
