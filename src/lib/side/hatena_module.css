@@ -98,12 +98,12 @@
         .urllist-title-link {
           @apply line-clamp-2 hover:underline text-base my-2;
         }
-        .urllist-categories {
-          @apply flex flex-wrap text-sm;
-          a {
-            @apply bg-ghost/50 hover:bg-primary rounded-xs px-1.5 py-0.5 text-gray-700 transition-all hover:text-white;
-          }
-        }
+        /*.urllist-categories {*/
+        /*  @apply flex flex-wrap text-sm;*/
+        /*  a {*/
+        /*    @apply bg-ghost/50 hover:bg-primary rounded-xs px-1.5 py-0.5 text-gray-700 transition-all hover:text-white;*/
+        /*  }*/
+        /*}*/
       }
     }
   }

@@ -23,18 +23,18 @@
       @apply mb-1 text-2xl font-bold;
     }
 
-    .entry-categories {
-      @apply flex flex-wrap gap-1 text-xs;
-      a {
-        &::before {
-          content: "";
-          height: var(--text-xs);
-          width: var(--text-xs);
-          @apply block bg-gray-600;
-        }
-        @apply flex items-center gap-1 bg-ghost/50 hover:bg-primary rounded-xs px-1.5 py-0.5 text-gray-700 transition-all hover:text-white;
-      }
-    }
+    /*.entry-categories {*/
+    /*  @apply flex flex-wrap gap-1 text-xs;*/
+    /*  a {*/
+    /*    &::before {*/
+    /*      content: "";*/
+    /*      height: var(--text-xs);*/
+    /*      width: var(--text-xs);*/
+    /*      @apply block bg-gray-600;*/
+    /*    }*/
+    /*    @apply flex items-center gap-1 bg-ghost/50 hover:bg-primary rounded-xs px-1.5 py-0.5 text-gray-700 transition-all hover:text-white;*/
+    /*  }*/
+    /*}*/
   }
 
   /* 「編集する」ボタン */
