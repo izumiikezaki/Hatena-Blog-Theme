@@ -26,16 +26,28 @@
 
   /** # */
   h1 {
+    &::before {
+      content: "#";
+      @apply mr-2 text-gray-400;
+    }
     @apply text-2xl;
   }
 
   /** ## */
   h2 {
+    &::before {
+      content: "##";
+      @apply mr-2 text-gray-400;
+    }
     @apply text-xl;
   }
 
   /** 大見出し ### */
   h3 {
+    &::before {
+      content: "###";
+      @apply mr-2 text-gray-400;
+    }
     @apply text-lg;
   }
 
