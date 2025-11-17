@@ -40,11 +40,11 @@ body {
     @apply my-6 flex flex-col;
 
     .archive-heading {
-      @apply text-center text-xl;
+      @apply text-center text-lg ;
     }
 
     .search-result-form {
-      @apply mx-auto;
+      @apply mx-auto my-2;
     }
   }
 
