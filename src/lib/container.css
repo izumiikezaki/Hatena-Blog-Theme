@@ -7,18 +7,15 @@
 #top-box {
   @apply mx-auto max-w-[600px] px-4 xl:w-[900px];
 }
-/* 2カラムレイアウト */
+/* 1カラムレイアウト */
 #content-inner {
-  @apply flex flex-col items-center justify-start gap-x-20 gap-y-20;
-  @apply xl:flex-row xl:items-start xl:justify-center;
+  @apply flex flex-col items-center gap-y-20;
 
   #wrapper {
-    @apply w-full max-w-[600px] px-4;
-    @apply xl:w-[600px];
+    @apply mx-auto w-full max-w-[800px] px-4;
   }
 
   #box2 {
-    @apply mt-10 w-full max-w-[600px] px-4;
-    @apply xl:w-[300px];
+    @apply mx-auto w-full max-w-[800px] px-4;
   }
 }

@@ -1,6 +1,6 @@
 /* 記事内の書式 */
 .entry-content {
-  @apply text-base mb-32;
+  @apply text-base mb-32 mx-auto max-w-[560px];
 
   img,
   video {
