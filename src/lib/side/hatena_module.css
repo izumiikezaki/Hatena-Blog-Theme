@@ -79,23 +79,29 @@
 .hatena-module-entries-access-ranking,
 .hatena-module-related-entries {
   ul.hatena-urllist {
-    @apply flex flex-col gap-8;
+    @apply flex flex-col gap-4;
 
     li.urllist-item {
       .urllist-item-inner {
-        @apply relative;
+        @apply relative min-h-[90px] pl-[calc(160px+16px)];
         .urllist-date-link {
           @apply absolute top-0 left-0 z-100 m-1 rounded-sm bg-white/50 px-1 py-0.5 text-xs text-gray-700 hover:bg-slate-200/70;
         }
 
         .urllist-image-link {
-          @apply  self-center block size-fit overflow-hidden;
+          /*@apply  self-center block size-fit overflow-hidden;*/
           /* スマホサイズだと親のパディング分も超えて配置 */
-          @apply -mx-4 max-w-[calc(100%+var(--spacing-4))];
-          @apply sm:mx-0 sm:max-w-full sm:rounded;
+          /*@apply -mx-4 max-w-[calc(100%+var(--spacing-4))];*/
+          /*@apply sm:mx-0 sm:max-w-full sm:rounded;*/
+          @apply absolute top-0 left-0 w-[160px];
+
+
 
           img.urllist-image {
-            @apply !m-0 aspect-16/9 max-w-full overflow-hidden object-cover transition-transform duration-200 hover:scale-105;
+            @apply !m-0 aspect-16/9 max-w-full object-cover;
+            @apply rounded;
+
+            /*overflow-hidden transition-transform duration-200 hover:scale-105;*/
           }
         }
 
