@@ -145,7 +145,7 @@
     li{
       @apply list-none my-2 ;
       a{
-        @apply hover:bg-ghost/50;
+        @apply transition-opacity hover:opacity-60;
       }
     }
   }
