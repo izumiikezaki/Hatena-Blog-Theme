@@ -95,8 +95,6 @@
           /*@apply sm:mx-0 sm:max-w-full sm:rounded;*/
           @apply absolute top-0 left-0 w-[160px];
 
-
-
           img.urllist-image {
             @apply !m-0 aspect-16/9 max-w-full object-cover;
             @apply rounded;
