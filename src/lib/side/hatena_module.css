@@ -108,6 +108,25 @@
         .urllist-title-link {
           @apply font-bold text-gray-800 hover:text-gray-600;
         }
+
+        .urllist-categories {
+          @apply flex flex-wrap gap-2;
+          a {
+            @apply text-xs m-0 inline relative gap-1 bg-white rounded-sm pl-[24px] pr-1.5 py-0.5 text-gray-600 transition-all;
+            @apply hover:scale-105;
+
+            &::before {
+              content: "";
+              @apply bg-gray-100;
+              @apply inline-block  w-[20px] absolute left-0 top-0 bottom-0 rounded-l-sm transition-all;
+            }
+
+            &:hover::before {
+              @apply backdrop-saturate-150;
+              @apply animate-pulse;
+            }
+          }
+        }
       }
     }
   }
@@ -135,10 +154,23 @@
 
 /** カテゴリー */
 .hatena-module-category {
-  /** TODO:動作未確認 */
-  ul.hatena-urllist {
-    li {
-      @apply mb-2.5;
+  .hatena-urllist {
+    @apply flex flex-wrap gap-2;
+
+    a {
+      @apply text-xs m-0 inline relative gap-1 bg-white rounded-sm pl-[24px] pr-1.5 py-0.5 text-gray-600 transition-all;
+      @apply hover:scale-105;
+
+      &::before {
+        content: "";
+        @apply bg-gray-100;
+        @apply inline-block  w-[20px] absolute left-0 top-0 bottom-0 rounded-l-sm transition-all;
+      }
+
+      &:hover::before {
+        @apply backdrop-saturate-150;
+        @apply animate-pulse;
+      }
     }
   }
 }
