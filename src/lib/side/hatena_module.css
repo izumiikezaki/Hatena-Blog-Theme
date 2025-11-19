@@ -100,7 +100,7 @@
         }
 
         .urllist-title-link {
-          @apply line-clamp-2 font-bold text-gray-800 hover:text-gray-600;
+          @apply font-bold text-gray-800 hover:text-gray-600;
         }
       }
     }
