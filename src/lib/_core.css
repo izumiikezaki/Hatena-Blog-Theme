@@ -41,6 +41,7 @@ body {
 
     .archive-heading {
       @apply text-center text-lg ;
+      animation: fadeInUp 1s ease-out;
     }
 
     .search-result-form {

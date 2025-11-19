@@ -9,6 +9,7 @@
 
 @import "tailwindcss";
 @import "./lib/_variable.css";
+@import "./lib/_animations.css";
 @import "./lib/_core.css";
 @import "./lib/container.css";
 @import "./lib/header/blog_title.css";
