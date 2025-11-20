@@ -133,7 +133,7 @@
   }
 
   hr {
-    @apply mx-auto my-8 w-1/2 border-t border-gray-200;
+    @apply mx-auto my-8 w-1/2 border-t border-gray-800;
   }
 
   .table-of-contents {
