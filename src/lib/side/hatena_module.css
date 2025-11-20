@@ -157,7 +157,7 @@
     @apply flex flex-wrap gap-2;
 
     a {
-      @apply text-xs m-0 inline relative gap-1 bg-white rounded-sm pl-[24px] pr-1.5 py-0.5 text-gray-600 transition-all;
+      @apply text-xs m-0 inline-block relative gap-1 bg-white rounded-sm pl-[24px] pr-1.5 py-0.5 text-gray-600 transition-all;
       @apply hover:scale-105;
 
       &::before {
