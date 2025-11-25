@@ -58,14 +58,24 @@ body {
       @apply mx-4 my-12 flex flex-col text-sm;
       /*@apply leading-snug;*/
 
-      .archive-date {
-        @apply text-xs;
+      .archive-entry-header {
+        .archive-date {
+          @apply text-xs;
+        }
+
+        .entry-title {
+          @apply my-1;
+          a {
+            @apply line-clamp-2
+          }
+        }
+
       }
 
-      .entry-title {
-        @apply my-1;
+      .categories {
+        @apply flex flex-wrap gap-2;
         a {
-          @apply line-clamp-2
+          @apply styleset-category-badge;
         }
       }
 
