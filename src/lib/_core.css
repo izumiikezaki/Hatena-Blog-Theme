@@ -55,7 +55,7 @@ body {
     @apply grid grid-cols-1 gap-1 sm:grid-cols-2;
 
     .archive-entry {
-      @apply mx-4 my-12 flex flex-col text-sm;
+      @apply mx-4 my-12 flex flex-col gap-2 text-sm;
       /*@apply leading-snug;*/
 
       .archive-entry-header {
@@ -81,7 +81,7 @@ body {
       }
 
       .entry-thumb-link {
-        @apply my-2;
+        @apply order-first;
         .entry-thumb {
           @apply w-full bg-cover bg-center aspect-16/9 m-0! rounded h-auto!;
         }
