@@ -5,7 +5,7 @@ html {
 
 body {
   /** 初期設定 */
-  @apply font-sans leading-relaxed text-gray-950 text-base bg-ghost;
+  @apply bg-ghost font-sans text-base leading-relaxed text-gray-950;
 
   /* 下線のオフセット*/
   @apply underline-offset-2;
@@ -34,13 +34,12 @@ body {
 }
 
 .page-archive {
-
   .search-result,
   .archive-header-category {
     @apply my-6 flex flex-col;
 
     .archive-heading {
-      @apply text-center text-lg ;
+      @apply text-center text-lg;
       animation: fadeInUp 1s ease-out;
     }
 
@@ -48,8 +47,6 @@ body {
       @apply mx-auto my-2;
     }
   }
-
-
 
   .archive-entries {
     @apply grid grid-cols-1 gap-1 sm:grid-cols-2;
@@ -59,7 +56,6 @@ body {
       /*@apply leading-snug;*/
 
       .archive-entry-header {
-
         .archive-date {
           @apply text-xs;
         }
@@ -67,10 +63,9 @@ body {
         .entry-title {
           @apply my-1;
           a {
-            @apply line-clamp-2
+            @apply line-clamp-2;
           }
         }
-
       }
 
       .categories {
@@ -83,7 +78,7 @@ body {
       .entry-thumb-link {
         @apply order-first;
         .entry-thumb {
-          @apply w-full bg-cover bg-center aspect-16/9 m-0! rounded h-auto!;
+          @apply m-0! aspect-16/9 h-auto! w-full rounded bg-cover bg-center;
         }
       }
 
