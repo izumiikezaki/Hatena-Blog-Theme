@@ -2,8 +2,7 @@
 .hatena-module {
   @apply mb-20 text-sm sm:text-xs;
   .hatena-module-title {
-    @apply mb-1 text-xl tracking-wider;
-    font-family: 'GFS Didot', serif;
+    @apply mb-1 text-xl tracking-wider font-display;
     a {
       @apply no-underline hover:underline;
     }

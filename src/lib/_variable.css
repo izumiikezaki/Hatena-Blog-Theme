@@ -7,7 +7,7 @@
     "Hiragino Mincho", "MS PMincho", "MS Mincho", serif;
   --font-mono:
     "Monaco", "Consolas", "Courier New", Courier, monospace, sans-serif;
-
+  --font-display: 'GFS Didot' , serif;
 
   --color-gallery : #eaeaee;
   --color-ghost : #cccdd8;
