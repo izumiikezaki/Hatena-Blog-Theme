@@ -79,8 +79,11 @@ body {
         }
       }
 
-      .entry-thumb {
-        @apply w-full bg-cover my-2;
+      .entry-thumb-link {
+        @apply my-2;
+        .entry-thumb {
+          @apply w-full bg-cover aspect-16/9 m-0! rounded;
+        }
       }
 
       .entry-description {
