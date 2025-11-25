@@ -78,7 +78,8 @@ body {
       .entry-thumb-link {
         @apply order-first;
         .entry-thumb {
-          @apply m-0! aspect-16/9 h-auto! w-full rounded bg-cover bg-center;
+          @apply m-0! h-auto!;
+          @apply aspect-16/9 w-full rounded bg-cover bg-center;
         }
       }
 
