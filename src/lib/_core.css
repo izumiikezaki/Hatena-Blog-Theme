@@ -59,6 +59,7 @@ body {
       /*@apply leading-snug;*/
 
       .archive-entry-header {
+
         .archive-date {
           @apply text-xs;
         }
@@ -82,7 +83,7 @@ body {
       .entry-thumb-link {
         @apply my-2;
         .entry-thumb {
-          @apply w-full bg-cover aspect-16/9 m-0! rounded;
+          @apply w-full bg-cover bg-center aspect-16/9 m-0! rounded h-auto!;
         }
       }
 
