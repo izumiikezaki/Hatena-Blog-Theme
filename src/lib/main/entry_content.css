@@ -147,7 +147,7 @@
   .table-of-contents {
     &::before {
       content: "Table of Contents";
-      @apply mb-2 block font-bold;
+      @apply mb-2 block font-display font-bold text-xl tracking-wider;
     }
     @apply mx-auto rounded border-2 border-white bg-white/80 p-4 w-full;
 
