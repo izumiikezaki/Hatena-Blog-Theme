@@ -1,6 +1,10 @@
 /** サイドバーモジュール */
 .hatena-module {
-  @apply mb-20 text-sm sm:text-xs;
+  @apply mb-20 text-sm;
+
+  @variant sm {
+    @apply text-xs;
+  }
   .hatena-module-title {
     @apply mb-1 text-xl tracking-wider font-display;
     a {

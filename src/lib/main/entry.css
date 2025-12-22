@@ -1,6 +1,10 @@
 /* entry */
 .entry {
-  @apply mb-20 p-2 md:text-[1.6rem];
+  @apply mb-20 p-2;
+
+  @variant md {
+    @apply text-[1.6rem];
+  }
 
   .entry-inner {
 

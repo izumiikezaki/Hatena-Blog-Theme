@@ -86,7 +86,11 @@
   }
 
   table {
-    @apply mb-4 block w-full border-collapse border-spacing-0 overflow-auto text-xs md:text-sm;
+    @apply mb-4 block w-full border-collapse border-spacing-0 overflow-auto text-xs;
+
+    @variant md {
+      @apply text-sm;
+    }
 
     th,
     td {
