@@ -145,7 +145,13 @@
         content: "Table of Contents";
         @apply mb-2 block font-bold;
     }
-    @apply border border-gray-200 p-4 pl-8 drop-shadow bg-white/80 rounded;
+    @apply border-2 border-white p-4 pl-8 rounded;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    filter:
+      drop-shadow(3px 3px 10px rgba(255, 80, 80, 0.3))
+      drop-shadow(5px 5px 14px rgba(230, 170, 130, 0.3));
+
     li{
       @apply list-none my-2 ;
       a{
