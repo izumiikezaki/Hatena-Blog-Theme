@@ -7,17 +7,12 @@
   }
 
   .entry-inner {
-
     @variant xl {
       @apply grid grid-cols-2;
     }
 
     .entry-header {
-      @apply mb-4 pb-4 h-fit;
-
-      @variant xl {
-        @apply sticky top-0;
-      }
+      @apply mb-4 pb-4 relative;
 
       .entry-date {
         @apply mb-2 flex gap-2 text-xs font-bold;
@@ -48,13 +43,13 @@
       }
 
       /* 「編集する」ボタン */
-
       .entry-header-menu {
-        @apply bg-primary rounded-xs px-2 py-0.5 text-white shadow;
-        @apply hover:bg-accent transition-all;
+        @apply bg-primary absolute top-0 right-0 block rounded-xs px-2 py-0.5 text-white shadow transition-all;
+        @variant hover {
+          @apply hover:bg-accent;
+        }
       }
     }
-
 
     /* 「続きを読む」ボタン */
 
