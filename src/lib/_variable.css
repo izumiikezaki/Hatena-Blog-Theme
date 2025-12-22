@@ -43,7 +43,7 @@
     @apply text-xs m-0 inline relative gap-1 bg-white hover:scale-105 rounded-sm pl-[24px] pr-1.5 py-0.5 text-gray-600 transition-all;
     &::before {
       content: "";
-      @apply bg-gray-100;
+      @apply bg-gray-400;
       @apply inline-block  w-[20px] absolute left-0 top-0 bottom-0 rounded-l-sm transition-all;
     }
     @variant hover {
