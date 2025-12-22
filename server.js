@@ -1,8 +1,9 @@
+import "dotenv/config";
 import { createServer } from "vite";
 
-const blogHost = process.argv[2];
+const blogHost = process.env.BLOG_HOST;
 if (!blogHost) {
-  throw new Error("ブログのドメイン名を指定してください");
+  throw new Error("環境変数BLOG_HOSTにブログのドメイン名を指定してください");
 }
 
 const server = await createServer({
@@ -25,3 +26,5 @@ const server = await createServer({
 });
 
 await server.listen();
+
+console.log(`\nCORS設定: https://${blogHost}/`);

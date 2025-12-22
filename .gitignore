@@ -13,4 +13,7 @@ node_modules/
 # Ignore build
 build/
 
+# Environment variables
+.env
+
 .idea/
