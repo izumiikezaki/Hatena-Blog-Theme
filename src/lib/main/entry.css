@@ -1,6 +1,6 @@
 /* entry */
 .entry {
-  @apply mb-20 p-2;
+  @apply mb-20 p-2 bg-whisper;
 
   @variant md {
     @apply text-[1.6rem];

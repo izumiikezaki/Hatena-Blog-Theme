@@ -14,15 +14,19 @@
   }
   .pager-prev {
     @apply self-start;
-    &:hover a .pager-arrow {
-    @apply -translate-x-1;
+    @variant hover {
+      a .pager-arrow {
+        @apply -translate-x-1;
+      }
     }
   }
 
   .pager-next{
     @apply self-end;
-    &:hover a .pager-arrow {
-      @apply translate-x-1;
+    @variant hover {
+      a .pager-arrow {
+        @apply translate-x-1;
+      }
     }
   }
 }

@@ -11,6 +11,7 @@
 
   --color-gallery : #eaeaee;
   --color-ghost : #cccdd8;
+  --color-whisper: #f0f0f3;
   --color-primary-light: #2870bd;
   --color-primary: #192245;
   /*#1c38a6;*/
@@ -45,9 +46,11 @@
       @apply bg-gray-100;
       @apply inline-block  w-[20px] absolute left-0 top-0 bottom-0 rounded-l-sm transition-all;
     }
-    &:hover::before {
-      @apply backdrop-saturate-150;
-      @apply animate-pulse;
+    @variant hover {
+      &::before {
+        @apply backdrop-saturate-150;
+        @apply animate-pulse;
+      }
     }
 }
 
