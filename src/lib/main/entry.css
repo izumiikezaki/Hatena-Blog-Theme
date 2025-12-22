@@ -1,16 +1,8 @@
 /* entry */
 .entry {
-  @apply mb-20 p-2 bg-whisper;
-
-  @variant md {
-    @apply text-[1.6rem];
-  }
+  @apply mb-20 p-2 bg-whisper w-[600px] mx-auto;
 
   .entry-inner {
-    @variant xl {
-      @apply grid grid-cols-2;
-    }
-
     .entry-header {
       @apply mb-4 pb-4 relative;
 
@@ -59,10 +51,7 @@
     }
 
     /* 記事下 */
-
     .entry-footer {
-      @apply xl:col-start-2;
-
       .entry-footer-section {
         @apply mb-2 flex flex-wrap items-center justify-between gap-2 text-xs text-gray-800;
 
