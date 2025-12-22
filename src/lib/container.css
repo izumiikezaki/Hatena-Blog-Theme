@@ -15,11 +15,28 @@
 #content-inner {
   @apply flex flex-col items-center gap-y-20;
 
+  @variant xl {
+    @apply flex-row items-start justify-around;
+
+    &::before {
+      content: "";
+      @apply block w-[300px];
+    }
+  }
+
   #wrapper {
-    @apply mx-auto w-full container;
+    @apply w-full container;
+
+    @variant xl {
+      @apply max-w-[600px];
+    }
   }
 
   #box2 {
-    @apply mx-auto w-full container px-4;
+    @apply  w-full container px-4;
+
+    @variant xl {
+      @apply max-w-[300px];
+    }
   }
 }
