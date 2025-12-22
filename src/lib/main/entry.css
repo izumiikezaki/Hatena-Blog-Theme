@@ -1,6 +1,10 @@
 /* entry */
 .entry {
-  @apply mb-20 p-2 bg-whisper w-[600px] mx-auto;
+  @apply mb-20 p-2 bg-whisper w-full mx-auto;
+
+  @variant md {
+    @apply w-[600px];
+  }
 
   .entry-inner {
     .entry-header {

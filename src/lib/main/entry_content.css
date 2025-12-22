@@ -1,6 +1,10 @@
 /* 記事内の書式 */
 .entry-content {
-  @apply mx-auto mb-32 max-w-[560px] text-base;
+  @apply mx-auto mb-32 w-full text-base;
+
+  @variant md {
+    @apply max-w-[560px];
+  }
 
   img,
   video {
@@ -145,7 +149,11 @@
       content: "Table of Contents";
       @apply mb-2 block font-bold;
     }
-    @apply m-0 rounded border-2 border-white bg-white/80 p-4;
+    @apply mx-auto rounded border-2 border-white bg-white/80 p-4 w-full;
+
+    @variant md {
+      @apply w-[300px];
+    }
     backdrop-filter: blur(8px);
     filter: drop-shadow(2px 2px 6px rgba(255, 80, 80, 0.2))
       drop-shadow(3px 3px 8px rgba(230, 170, 130, 0.2));

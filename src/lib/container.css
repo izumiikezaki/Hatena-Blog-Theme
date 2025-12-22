@@ -16,7 +16,7 @@
   @apply flex flex-col items-center gap-y-20;
 
   #wrapper {
-    @apply mx-auto w-full container px-4;
+    @apply mx-auto w-full container;
   }
 
   #box2 {
