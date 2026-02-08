@@ -3,6 +3,11 @@ html {
   @apply scroll-smooth;
 }
 
+/* カーソル選択時の色 */
+::selection {
+  @apply bg-cyan-600 text-white;
+}
+
 body {
   /** 初期設定 */
   @apply bg-ghost font-sans text-base leading-relaxed text-gray-950;
