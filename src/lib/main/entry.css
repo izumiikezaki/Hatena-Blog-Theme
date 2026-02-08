@@ -2,10 +2,6 @@
 .entry {
   @apply mb-20 p-2 bg-whisper w-full mx-auto;
 
-  @variant md {
-    @apply w-[600px];
-  }
-
   .entry-inner {
     .entry-header {
       @apply mb-4 pb-4 relative;

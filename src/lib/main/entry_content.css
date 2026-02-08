@@ -144,6 +144,7 @@
     @apply mx-auto my-8 w-1/2 border-t border-gray-800;
   }
 
+  /* 目次 */
   .table-of-contents {
     &::before {
       content: "Table of Contents";
@@ -154,9 +155,6 @@
     @variant md {
       @apply w-[300px];
     }
-    backdrop-filter: blur(8px);
-    filter: drop-shadow(2px 2px 6px rgba(255, 80, 80, 0.2))
-      drop-shadow(3px 3px 8px rgba(230, 170, 130, 0.2));
 
     ul {
       @apply m-0;
