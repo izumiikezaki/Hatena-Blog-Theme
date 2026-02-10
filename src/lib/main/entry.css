@@ -1,16 +1,17 @@
 /* entry */
 .entry {
-  @apply mb-20 p-2 bg-whisper w-full mx-auto;
+  @apply mb-20 p-2 bg-whisper w-full mx-auto rounded-lg;
 
   .entry-inner {
     .entry-header {
       @apply mb-4 pb-4 relative;
 
+      /** 日付 */
       .entry-date {
         @apply mb-2 flex gap-2 text-xs font-bold;
 
         a {
-          @apply text-gray-800 no-underline;
+          @apply text-gray-500 no-underline;
         }
 
         .date-last-updated {

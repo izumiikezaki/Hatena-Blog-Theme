@@ -3,7 +3,7 @@
   @apply mx-auto mb-32 w-full text-base;
 
   @variant md {
-    @apply max-w-[560px];
+    @apply max-w-[620px];
   }
 
   img,
@@ -153,7 +153,7 @@
     @apply mx-auto rounded border-2 border-white bg-white/80 p-4 w-full;
 
     @variant md {
-      @apply w-[300px];
+      @apply w-[480px];
     }
 
     ul {
@@ -163,20 +163,20 @@
     li {
       @apply my-2 list-none text-sm;
       &::before {
-        content: "🔵";
+        /*content: "🔵";*/
         @apply mr-1;
       }
     }
 
     li li {
       &::before {
-        content: "🟦";
+        /*content: "🟦";*/
       }
     }
 
     li li li {
       &::before {
-        content: "-";
+        /*content: "-";*/
       }
     }
 
