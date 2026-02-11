@@ -1,33 +1,52 @@
 /* container */
-#container,
+#container {
+  /*@apply pt-[80vh];*/
+
+
+
+}
 #footer {
   @apply w-full;
 }
 
-#top-box {
-  @apply mx-auto max-w-[600px] px-4;
+#container-inner {
+  @apply relative w-full;
 
-  @variant xl {
-    @apply w-[900px];
+  @apply bg-white;
+
+
+  @variant lg {
+    @apply w-[640px] mx-auto;
+    @apply border-x-2 border-x-primary-light;
+  }
+
+  header#blog-title {
+    @apply w-full;
+    /*@apply absolute bottom-[100%];*/
+  }
+
+  /** 上部のカスタムHTML **/
+  #top-editarea {
+  }
+
+  /** パンくずリスト等 **/
+  #top-box {
+  }
+
+  /** メインコンテンツ **/
+  #content {
+  }
+
+  /** 下部のカスタムHTML **/
+  #bottom-editarea {
   }
 }
-/* 1カラムレイアウト */
+
 #content-inner {
-  @apply flex flex-col items-center gap-y-20;
 
   #main {
-    @apply w-full container;
-
-    @variant xl {
-      @apply max-w-[960px];
-    }
   }
 
   #box2 {
-    @apply  w-full container px-4;
-
-    @variant xl {
-      @apply max-w-[960px];
-    }
   }
 }

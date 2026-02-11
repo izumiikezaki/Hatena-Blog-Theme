@@ -1,6 +1,6 @@
 /* ヘッダ */
 #blog-title {
-  @apply py-8 text-center  my-4;
+  @apply py-8 text-center;
 
   @variant md {
     @apply py-12;
