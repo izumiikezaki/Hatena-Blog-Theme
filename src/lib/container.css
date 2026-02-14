@@ -10,14 +10,14 @@
 }
 
 #container-inner {
-  @apply relative w-full;
+  @apply relative w-full drop-shadow-sm;
 
-  @apply bg-ghost;
+  @apply bg-mistic;
 
 
   @variant lg {
     @apply w-[640px] mx-auto;
-    @apply border-x-2 border-x-primary-light;
+    @apply border-x-2 border-x-primary-dark;
   }
 
   header#blog-title {
@@ -31,7 +31,7 @@
 
   /** パンくずリスト等 **/
   #top-box {
-    @apply p-1
+    @apply p-4
   }
 
   /** メインコンテンツ **/

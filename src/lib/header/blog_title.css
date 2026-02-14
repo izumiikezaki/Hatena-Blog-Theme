@@ -31,3 +31,11 @@
 /*        }*/
 /*    }*/
 /*}*/
+
+/** ヘッダ画像のみ設定したとき */
+.header-image-only {
+    #blog-title-inner {
+        @apply bg-contain max-h-[200px] bg-center!;
+    }
+}
+
