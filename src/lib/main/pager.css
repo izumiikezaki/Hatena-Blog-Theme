@@ -1,11 +1,11 @@
 /* Pager */
 .pager {
-  @apply my-8 p-2 flex flex-col gap-1 text-base ;
   .pager-next,
   .pager-prev {
     a {
-      @apply block truncate rounded-sm px-3 py-2 text-gray-700;
-      @apply transition-colors hover:bg-white/40;
+      @apply block text-base w-full truncate px-10 py-10 border-y-1;
+      @apply bg-gray-100 text-gray-700 border-y-gray-300;
+      @apply transition-colors hover:bg-white;
     }
   }
 
@@ -13,7 +13,7 @@
     @apply inline-block transition-all px-1;
   }
   .pager-prev {
-    @apply self-start;
+    @apply text-left;
     @variant hover {
       a .pager-arrow {
         @apply -translate-x-1;
@@ -22,7 +22,7 @@
   }
 
   .pager-next{
-    @apply self-end;
+    @apply text-right;
     @variant hover {
       a .pager-arrow {
         @apply translate-x-1;
