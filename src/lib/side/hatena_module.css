@@ -1,12 +1,12 @@
 /** サイドバーモジュール */
 .hatena-module {
-  @apply mb-20 text-sm;
+  @apply mb-20 px-2 text-sm;
 
   @variant sm {
     @apply text-xs;
   }
   .hatena-module-title {
-    @apply mb-1 text-xl tracking-wider font-display;
+    @apply mb-1 text-2xl tracking-wider font-display;
     a {
       @apply no-underline hover:underline;
     }

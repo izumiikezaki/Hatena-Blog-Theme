@@ -1,10 +1,6 @@
 /* ヘッダ */
 #blog-title {
-  @apply py-8 text-center;
-
-  @variant md {
-    @apply py-12;
-  }
+  @apply text-center;
 
   #title {
     @apply m-0 text-2xl  font-serif font-thin tracking-widest;
@@ -15,7 +11,7 @@
   }
 
   #blog-description {
-    @apply mt-2 mb-0 text-xs tracking-wider;
+    @apply mb-0 text-xs tracking-wider;
     &::before {
       @apply content-['―'];
     }
@@ -25,16 +21,13 @@
   }
 }
 
-/* ヘッダ画像を設定したとき TODO:動作未確認 */
+ /*ヘッダ画像を設定したとき*/
 /*.header-image-enable {*/
 /*    #blog-title {*/
-/*        @apply my-0 mb-8;*/
-
 /*        #blog-title-inner {*/
-/*            @apply flex flex-row items-center;*/
+/*            @apply bg-contain bg-no-repeat;*/
 /*        }*/
 /*        #blog-title-content {*/
-/*            @apply mx-2.5;*/
 /*        }*/
 /*    }*/
 /*}*/
