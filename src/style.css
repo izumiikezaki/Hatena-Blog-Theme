@@ -7,7 +7,7 @@
     はてなブログのテーマ
 */
 
-@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Zen+Old+Mincho&display=swap');
 @import "tailwindcss";
 @import "./lib/_variable.css";
 @import "./lib/_animations.css";
