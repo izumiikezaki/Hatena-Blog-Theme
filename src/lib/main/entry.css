@@ -24,11 +24,11 @@
       }
 
       .entry-title {
-        @apply mb-1 text-2xl font-bold;
+        @apply mb-4 text-2xl font-bold;
       }
 
       .entry-categories {
-        @apply flex flex-wrap gap-2;
+        @apply mb-4 flex flex-wrap gap-2;
 
         a {
           @apply styleset-category-badge;
