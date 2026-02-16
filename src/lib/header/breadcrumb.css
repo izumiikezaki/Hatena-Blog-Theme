@@ -1,6 +1,6 @@
 /* パンくず（カテゴリー、記事ページで表示されます） */
 .breadcrumb {
-  @apply text-sm mt-8;
+  @apply text-sm;
   .breadcrumb-gt {
     @apply text-gray-500/60;
   }
