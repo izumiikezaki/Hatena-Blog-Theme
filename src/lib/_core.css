@@ -18,6 +18,7 @@ html {
 }
 
 body {
+  @apply bg-mistic;
   /** 初期設定 */
   @apply font-serif text-base leading-relaxed text-gray-950;
 

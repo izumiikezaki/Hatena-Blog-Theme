@@ -7,7 +7,7 @@
 }
 
 #container-inner {
-  @apply relative w-full drop-shadow-sm;
+  @apply relative w-full;
 
   @variant lg {
     @apply w-[640px] mx-auto;
@@ -25,13 +25,13 @@
 
   /** パンくずリスト等 **/
   #top-box {
-    @apply bg-white/50;
+    @apply bg-white/80;
     @apply p-4
   }
 
   /** メインコンテンツ **/
   #content {
-    @apply bg-white/50;
+    @apply bg-white/80;
   }
 
   /** 下部のカスタムHTML **/
