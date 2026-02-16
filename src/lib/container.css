@@ -11,7 +11,7 @@
 
   @variant lg {
     @apply w-[640px] mx-auto;
-    @apply border-x-2 border-x-gray-950;
+    @apply border-x-2 border-x-primary;
   }
 
   header#blog-title {
@@ -25,11 +25,13 @@
 
   /** パンくずリスト等 **/
   #top-box {
+    @apply bg-white/50;
     @apply p-4
   }
 
   /** メインコンテンツ **/
   #content {
+    @apply bg-white/50;
   }
 
   /** 下部のカスタムHTML **/
@@ -39,10 +41,8 @@
 
 #content-inner {
   #main {
-    @apply bg-mistic/80;
   }
 
   #box2 {
-    @apply bg-mistic/80;
   }
 }

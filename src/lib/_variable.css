@@ -13,16 +13,14 @@
   --color-gallery : #eaeaee;
   --color-ghost : #cccdd8;
   --color-mistic : #e6e6ec;
-  --color-whisper: #f0f0f3;
-  --color-primary-light: #2870bd;
-  --color-primary: #192245;
-  /*#1c38a6;*/
-  /*#3050c2;*/
-  --color-primary-dark: #10127b;
-  /*#7397a6;*/
 
-  --color-accent-light: #fb5d44;
-  --color-accent: #f92706;
+  --color-primary-light: #B8CCD9;
+  --color-primary-pale: #7691AD;
+  --color-primary: #53728A;
+  --color-primary-dark: #191B21;
+
+  --color-accent-pale: #E1543B;
+  --color-accent: #AB412C;
 }
 
 @utility bg-svg-search {
@@ -38,11 +36,11 @@
 }
 
 @utility bg-accent-gradient {
-  @apply from-accent via-accent to-accent-light bg-gradient-to-tr from-[0\%] via-[50\%] to-[100\%];
+  @apply from-accent via-accent to-accent-pale bg-gradient-to-tr from-[0\%] via-[50\%] to-[100\%];
 }
 
 @utility styleset-category-badge {
-    @apply text-xs m-0 inline relative gap-1 bg-white hover:scale-105 rounded-sm pl-[24px] pr-1.5 py-0.5 text-gray-600 transition-all;
+    @apply text-xs m-0 inline relative gap-1 bg-white hover:scale-105 rounded-sm pl-[24px] pr-1.5 py-0.5 text-gray-600 transition-all font-sans;
     &::before {
       content: "";
       @apply bg-gray-400;
@@ -51,7 +49,6 @@
     @variant hover {
       &::before {
         @apply backdrop-saturate-150;
-        @apply animate-pulse;
       }
     }
 }

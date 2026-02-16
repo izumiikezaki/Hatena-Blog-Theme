@@ -14,7 +14,7 @@ html {
 
 /* カーソル選択時の色 */
 ::selection {
-  @apply bg-cyan-600 text-white;
+  @apply bg-accent-pale text-white;
 }
 
 body {
@@ -52,7 +52,7 @@ body {
 .page-archive {
   .search-result,
   .archive-header-category {
-    @apply my-6 flex flex-col;
+    @apply my-8 flex flex-col;
 
     .archive-heading {
       @apply text-center text-2xl;
@@ -65,10 +65,11 @@ body {
   }
 
   .archive-entries {
-    @apply grid grid-cols-2 gap-1;
+    @apply bg-mistic;
+    @apply grid grid-cols-2 gap-x-1 gap-y-1;
 
     .archive-entry {
-      @apply mx-4 my-12 flex flex-col gap-2 text-sm;
+      @apply mx-4 my-4 flex flex-col gap-2 text-sm;
       /*@apply leading-snug;*/
 
       .archive-entry-header {
