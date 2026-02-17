@@ -7,7 +7,7 @@
     a {
       @apply block text-base w-full truncate px-10 py-10;
       @apply bg-gray-50 text-gray-700;
-      @apply transition-colors hover:bg-primary-light hover:text-white;
+      @apply transition-colors hover:bg-primary-ll hover:text-white;
     }
   }
 

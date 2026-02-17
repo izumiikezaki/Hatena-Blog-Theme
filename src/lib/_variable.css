@@ -14,10 +14,10 @@
   --color-ghost : #cccdd8;
   --color-mistic : #e6e6ec;
 
-  --color-primary-light: #B8CCD9;
-  --color-primary-pale: #7691AD;
+  --color-primary-ll: #B8CCD9;
+  --color-primary-l: #7691AD;
   --color-primary: #53728A;
-  --color-primary-dark: #191B21;
+  --color-primary-d: #191B21;
 
   --color-accent-pale: #E1543B;
   --color-accent: #AB412C;
@@ -32,7 +32,7 @@
 }
 
 @utility bg-primary-gradient {
-  @apply from-primary via-primary to-primary-light bg-gradient-to-tr from-[0\%] via-[50\%] to-[100\%];
+  @apply from-primary via-primary to-primary-ll bg-gradient-to-tr from-[0\%] via-[50\%] to-[100\%];
 }
 
 @utility bg-accent-gradient {
