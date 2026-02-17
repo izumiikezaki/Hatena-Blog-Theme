@@ -32,7 +32,7 @@
   h1 {
     &::before {
       content: "#";
-      @apply mr-2 text-gray-400;
+      @apply mr-2 text-primary-l;
     }
     @apply text-2xl;
   }
@@ -41,7 +41,7 @@
   h2 {
     &::before {
       content: "##";
-      @apply mr-2 text-gray-400;
+      @apply mr-2 text-primary-l;
     }
     @apply text-xl;
   }
@@ -50,7 +50,7 @@
   h3 {
     &::before {
       content: "###";
-      @apply mr-2 text-gray-400;
+      @apply mr-2 text-primary-ll;
     }
     @apply text-lg;
   }
@@ -108,7 +108,7 @@
 
   /** 引用 */
   blockquote {
-    @apply mb-2.5 border-l-4 border-gray-500 p-4;
+    @apply mb-2.5 border-l-4 border-primary/60 p-4;
 
     p:first-of-type {
       @apply mt-0;
@@ -141,7 +141,7 @@
   }
 
   hr {
-    @apply mx-auto my-8 w-1/2 border-t border-gray-800;
+    @apply mx-auto my-8 w-5/6 border-t border-1 text-primary-l;
   }
 
   /* 目次 */

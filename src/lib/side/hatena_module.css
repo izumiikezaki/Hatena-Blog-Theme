@@ -1,6 +1,6 @@
 /** サイドバーモジュール */
 .hatena-module {
-  @apply px-4 py-10 text-sm bg-gray-50;
+  @apply px-4 py-10 text-sm bg-mistic;
 
   @variant sm {
     @apply text-xs;
