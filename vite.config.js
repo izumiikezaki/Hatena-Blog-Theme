@@ -1,13 +1,15 @@
 import { defineConfig } from "vite";
 import autoprefixer from "autoprefixer";
 import tailwindcss from "@tailwindcss/vite";
+import vue from "@vitejs/plugin-vue";
 
 export default defineConfig({
-  plugins: [tailwindcss()],
+  plugins: [tailwindcss(), vue()],
   build: {
     rollupOptions: {
-      input: ["src/style.css"],
+      input: ["src/style.css", "src/app.js"],
       output: {
+        entryFileNames: "script.js",
         assetFileNames: ({ name }) => name.replace("style", "nocturne"),
       },
     },
