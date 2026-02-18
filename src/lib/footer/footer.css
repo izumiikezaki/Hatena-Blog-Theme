@@ -1,23 +1,25 @@
 /* footer */
 #footer {
-  @apply py-8 text-center text-xs text-gray-200;
-  @apply bg-primary;
+  @apply h-[100vh] flex flex-col justify-end;
+  @apply py-8 text-center text-xs text-primary-d;
+  /*@apply bg-primary;*/
 
+  #footer-inner {
 
-  .footer-address {
-    a {
-      @apply flex items-center justify-center gap-1;
-      img {
-        @apply inline-block;
+    .footer-address {
+      a {
+        @apply flex items-center justify-center gap-1;
+        img {
+          @apply inline-block;
+        }
       }
     }
-  }
 
-  a {
-    @apply text-gray-200;
-  }
+    a {
+    }
 
-  p {
-    @apply mx-auto my-2;
+    p {
+      @apply mx-auto my-2;
+    }
   }
 }

@@ -7,11 +7,12 @@
 }
 
 #container-inner {
+  @apply bg-mistic/80;
   @apply relative w-full;
 
   @variant lg {
     @apply w-[640px] mx-auto;
-    @apply border-x-2 border-x-primary;
+    /*@apply border-x-2 border-x-primary;*/
   }
 
   header#blog-title {
@@ -25,13 +26,11 @@
 
   /** パンくずリスト等 **/
   #top-box {
-    @apply bg-white/80;
     @apply p-4
   }
 
   /** メインコンテンツ **/
   #content {
-    @apply bg-white/80;
   }
 
   /** 下部のカスタムHTML **/
@@ -41,8 +40,10 @@
 
 #content-inner {
   #main {
+    @apply bg-mistic;
   }
 
   #box2 {
+    @apply bg-primary-ll;
   }
 }

@@ -1,6 +1,6 @@
 /** サイドバーモジュール */
 .hatena-module {
-  @apply px-4 py-10 text-sm bg-mistic;
+  @apply px-4 py-10 text-sm;
 
   @variant sm {
     @apply text-xs;
@@ -53,7 +53,7 @@
 /** 検索 */
 .hatena-module-search-box {
   .search-form {
-    @apply box-border flex w-full items-center rounded border border-gray-200;
+    @apply box-border flex w-full items-center rounded border border-gray-900;
   }
   .search-module-input {
     @apply h-5 flex-1 border-0 p-1.5 text-gray-900 outline-none;

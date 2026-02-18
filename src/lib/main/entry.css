@@ -1,6 +1,6 @@
 /* entry */
 .entry {
-  @apply mb-10 px-4 py-2 bg-mistic w-full mx-auto;
+  @apply mb-10 px-4 py-2 w-full mx-auto;
 
   .entry-inner {
     .entry-header {
