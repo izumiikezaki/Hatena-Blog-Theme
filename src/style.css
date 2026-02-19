@@ -9,15 +9,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Zen+Old+Mincho&display=swap');
 @import "tailwindcss";
-@import "./lib/_variable.css";
-@import "./lib/_animations.css";
-@import "./lib/_core.css";
-@import "./lib/container.css";
-@import "./lib/header/blog_title.css";
-@import "./lib/header/breadcrumb.css";
-@import "./lib/main/entry.css";
-@import "./lib/main/comment.css";
-@import "./lib/main/entry_content.css";
-@import "./lib/main/pager.css";
-@import "./lib/side/hatena_module.css";
-@import "./lib/footer/footer.css";
+@import "css/_variable.css";
+@import "css/_animations.css";
+@import "css/_core.css";
+@import "css/container.css";
+@import "css/header/blog_title.css";
+@import "css/header/breadcrumb.css";
+@import "css/main/entry.css";
+@import "css/main/comment.css";
+@import "css/main/entry_content.css";
+@import "css/main/pager.css";
+@import "css/side/hatena_module.css";
+@import "css/footer/footer.css";
