@@ -12,7 +12,7 @@
 
   @variant lg {
     @apply w-[640px] mx-auto;
-    /*@apply border-x-2 border-x-primary;*/
+    @apply border-x-1 border-x-primary-d;
   }
 
   header#blog-title {
