@@ -40,10 +40,10 @@
 
 #content-inner {
   #main {
-    @apply bg-mistic;
+    @apply bg-white;
   }
 
   #box2 {
-    @apply bg-primary-ll;
+    @apply bg-mistic;
   }
 }
