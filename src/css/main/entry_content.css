@@ -26,13 +26,15 @@
   h5,
   h6 {
     @apply mt-20 mb-4 font-bold;
+    &::before {
+      @apply mr-2 text-primary-l;
+    }
   }
 
   /** # */
   h1 {
     &::before {
       content: "#";
-      @apply mr-2 text-primary-l;
     }
     @apply text-2xl;
   }
@@ -41,7 +43,6 @@
   h2 {
     &::before {
       content: "##";
-      @apply mr-2 text-primary-l;
     }
     @apply text-xl;
   }
@@ -50,7 +51,6 @@
   h3 {
     &::before {
       content: "###";
-      @apply mr-2 text-primary-ll;
     }
     @apply text-lg;
   }
