@@ -11,7 +11,7 @@ const classMap = {
 
 <template>
   <div
-    class="fixed top-0 bottom-0 hidden items-center justify-center bg-red-500 lg:flex"
+    class="fixed top-0 bottom-0 hidden items-center justify-center lg:flex"
     :class="classMap[side]"
   >
     <slot />
