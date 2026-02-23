@@ -4,8 +4,8 @@ defineProps<{
 }>();
 
 const classMap = {
-  left: "right-[calc(50%+320px)] left-0",
-  right: "right-0 left-[calc(50%+320px)]",
+  left: "right-[700px] xl:right-[calc(50%+320px)] left-0",
+  right: "right-0 left-[calc(100%-60px)] xl:left-[calc(50%+320px)]",
 };
 </script>
 

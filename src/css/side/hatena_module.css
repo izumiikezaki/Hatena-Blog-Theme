@@ -6,7 +6,7 @@
     @apply text-xs;
   }
   .hatena-module-title {
-    @apply mb-1 text-4xl tracking-wider font-display;
+    @apply mb-4 text-4xl tracking-wider font-display;
     a {
       @apply no-underline hover:underline;
     }
