@@ -8,7 +8,7 @@
 
 #container-inner {
   @apply bg-mistic/80;
-  @apply relative w-full;
+  @apply relative w-full flex flex-col;
 
   @variant lg {
     @apply w-[640px] mx-auto;
@@ -22,6 +22,7 @@
 
   /** 上部のカスタムHTML **/
   #top-editarea {
+    @apply order-first;
   }
 
   /** パンくずリスト等 **/
