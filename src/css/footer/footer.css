@@ -1,8 +1,8 @@
 /* footer */
 #footer {
-  @apply h-[100vh] flex flex-col justify-end;
-  @apply py-8 text-center text-xs text-primary-d;
-  /*@apply bg-primary;*/
+  /*@apply h-[100vh] flex flex-col justify-end text-primary-d;*/
+  @apply py-8 text-center text-xs ;
+  @apply pt-12 bg-primary text-white;
 
   #footer-inner {
 
