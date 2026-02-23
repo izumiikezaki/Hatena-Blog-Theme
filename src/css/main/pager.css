@@ -5,9 +5,9 @@
   .pager-prev {
     @apply block;
     a {
-      @apply block text-base w-full truncate px-10 py-10;
+      @apply block text-base w-full truncate px-10 py-4;
       @apply text-gray-700;
-      @apply transition-colors hover:bg-primary-ll hover:text-white;
+      @apply transition-colors hover:bg-primary-l/60 hover:text-white;
     }
   }
 

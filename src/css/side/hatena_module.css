@@ -6,7 +6,7 @@
     @apply text-xs;
   }
   .hatena-module-title {
-    @apply mb-1 text-2xl tracking-wider font-display;
+    @apply mb-1 text-4xl tracking-wider font-display;
     a {
       @apply no-underline hover:underline;
     }
@@ -86,7 +86,7 @@
 
     li.urllist-item {
       .urllist-item-inner {
-        @apply relative min-h-[90px] pl-[calc(160px+16px)];
+        @apply relative grid min-h-[72px] md:min-h-[90px] pl-[calc(120px+8px)] md:pl-[calc(160px+16px)];
         .urllist-date-link {
           @apply absolute top-0 left-0 z-100 m-1 rounded-sm bg-white/50 px-1 py-0.5 text-xs text-gray-700 hover:bg-slate-200/70;
         }
@@ -96,7 +96,7 @@
           /* スマホサイズだと親のパディング分も超えて配置 */
           /*@apply -mx-4 max-w-[calc(100%+var(--spacing-4))];*/
           /*@apply sm:mx-0 sm:max-w-full sm:rounded;*/
-          @apply absolute top-0 left-0 w-[160px];
+          @apply absolute top-0 left-0 w-[120px] md:w-[160px] ;
 
           img.urllist-image {
             @apply !m-0 aspect-16/9 max-w-full object-cover;

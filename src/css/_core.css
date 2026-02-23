@@ -66,11 +66,10 @@ body {
   }
 
   .archive-entries {
-    @apply bg-mistic;
-    @apply grid grid-cols-2 gap-x-1 gap-y-1;
+    @apply grid grid-cols-2;
 
     .archive-entry {
-      @apply mx-4 my-4 flex flex-col gap-2 text-sm;
+      @apply p-1 flex flex-col gap-2 text-sm;
       /*@apply leading-snug;*/
 
       .archive-entry-header {
@@ -101,16 +100,19 @@ body {
         }
       }
 
-      .entry-description {
-        @apply m-0 line-clamp-3 text-xs;
-      }
+      .archive-entry-body {
+        @apply justify-self-end;
+        .entry-description {
+          @apply m-0 line-clamp-3 text-xs;
+        }
 
-      .archive-entry-tags {
-        @apply flex flex-wrap justify-end gap-1;
-      }
+        .archive-entry-tags {
+          @apply flex flex-wrap justify-end gap-1;
+        }
 
-      .social-buttons {
-        @apply mt-1 block;
+        .social-buttons {
+          @apply mt-1 block;
+        }
       }
     }
   }
