@@ -35,7 +35,7 @@
 /** ヘッダ画像のみ設定したとき */
 .header-image-only {
     #blog-title-inner {
-        @apply bg-contain max-h-[200px] bg-center!;
+        @apply bg-contain max-h-[128px] bg-center!;
     }
 }
 
