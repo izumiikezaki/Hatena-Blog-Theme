@@ -11,7 +11,7 @@ const menuItems = [
 
 <template>
   <nav>
-    <ul class="flex justify-around bg-gray-100 font-sans font-bold">
+    <ul class="flex justify-around bg-white font-sans font-bold">
       <li v-for="item in menuItems" class="block w-full">
         <a
           :href="item.link"
