@@ -29,6 +29,13 @@ body {
   @apply caret-accent;
 
   @apply bg-fixed;
+
+  /* 60px間隔の格子模様 */
+  background-image:
+    linear-gradient(to right, theme(--color-primary-l) 1px, transparent 1px),
+    linear-gradient(to bottom, theme(--color-primary-l) 1px, transparent 1px);
+  background-size: 60px 60px;
+  background-position: center center;
 }
 /* About ページ */
 .page-about {
