@@ -7,9 +7,12 @@ export default defineConfig({
   plugins: [tailwindcss(), vue()],
   build: {
     rollupOptions: {
-      input: ["src/style.css", "src/app.js"],
+      input: {
+        style: "src/style.css",
+        script: "src/app.js",
+      },
       output: {
-        entryFileNames: "script.js",
+        entryFileNames: "[name].js",
         assetFileNames: "style.css",
       },
     },
