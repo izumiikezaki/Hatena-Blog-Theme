@@ -3,8 +3,10 @@ import autoprefixer from "autoprefixer";
 import tailwindcss from "@tailwindcss/vite";
 import vue from "@vitejs/plugin-vue";
 
+import { cloudflare } from "@cloudflare/vite-plugin";
+
 export default defineConfig({
-  plugins: [tailwindcss(), vue()],
+  plugins: [tailwindcss(), vue(), cloudflare()],
   build: {
     rollupOptions: {
       input: ["src/style.css", "src/app.js"],
