@@ -10,7 +10,7 @@ export default defineConfig({
       input: ["src/style.css", "src/app.js"],
       output: {
         entryFileNames: "script.js",
-        assetFileNames: ({ name }) => name.replace("style", "nocturne"),
+        assetFileNames: "style.css",
       },
     },
     outDir: "build",
