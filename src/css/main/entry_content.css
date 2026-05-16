@@ -1,0 +1,187 @@
+/* 記事内の書式 */
+.entry-content {
+  @apply mx-auto mb-32 w-full text-base;
+
+  @variant md {
+    @apply max-w-[620px];
+  }
+
+  img,
+  video {
+    @apply h-auto max-w-full;
+  }
+
+  a.keyword {
+    @apply underline;
+  }
+
+  p {
+    @apply my-10;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply mt-20 mb-4 font-bold;
+    &::before {
+      @apply mr-2 text-primary-l;
+    }
+  }
+
+  /** # */
+  h1 {
+    &::before {
+      content: "#";
+    }
+    @apply text-2xl;
+  }
+
+  /** ## */
+  h2 {
+    &::before {
+      content: "##";
+    }
+    @apply text-xl;
+  }
+
+  /** 大見出し ### */
+  h3 {
+    &::before {
+      content: "###";
+    }
+    @apply text-lg;
+  }
+
+  /** 中見出し */
+  h4 {
+    @apply text-lg;
+  }
+
+  /** 小見出し */
+  h5 {
+    @apply text-lg;
+  }
+
+  h6 {
+    @apply text-lg;
+  }
+
+  ul,
+  ol,
+  dd {
+    @apply mb-4 ml-6 p-0;
+  }
+
+  ul > li {
+    @apply list-disc;
+  }
+  ol > li {
+    @apply list-decimal;
+  }
+
+  li {
+    ul,
+    ol {
+      @apply mb-0;
+    }
+  }
+
+  table {
+    @apply mb-4 block w-full border-collapse border-spacing-0 overflow-auto text-xs;
+
+    @variant md {
+      @apply text-sm;
+    }
+
+    th,
+    td {
+      @apply border border-gray-700 px-2.5 py-1.5;
+    }
+
+    th {
+      @apply bg-gray-100;
+    }
+  }
+
+  /** 引用 */
+  blockquote {
+    @apply mb-2.5 border-l-4 border-primary/60 p-4;
+
+    p:first-of-type {
+      @apply mt-0;
+    }
+
+    p:last-of-type {
+      @apply mb-0;
+    }
+
+    cite {
+      @apply mt-1 block text-right text-gray-500;
+    }
+  }
+
+  pre,
+  code {
+    @apply font-mono;
+  }
+
+  pre {
+    @apply overflow-auto rounded bg-gray-900 p-2.5 text-xs leading-snug whitespace-pre-wrap;
+
+    > code {
+      @apply m-0 border-0 bg-transparent p-0 font-mono whitespace-pre;
+    }
+  }
+
+  code {
+    @apply mx-0.5 rounded-sm bg-gray-100 px-1.5 text-[90%] text-gray-700;
+  }
+
+  hr {
+    @apply mx-auto my-8 w-5/6 border-t border-1 text-primary-l;
+  }
+
+  /* 目次 */
+  .table-of-contents {
+    &::before {
+      content: "Table of Contents";
+      @apply mb-2 block font-display font-bold text-xl tracking-wider;
+    }
+    @apply mx-auto rounded border-1 border-b-primary bg-white/80 p-4 w-full;
+
+    @variant md {
+      @apply w-[480px];
+    }
+
+    ul {
+      @apply m-0;
+    }
+
+    li {
+      @apply my-2 list-none text-sm;
+      &::before {
+        /*content: "🔵";*/
+        @apply mr-1;
+      }
+    }
+
+    li li {
+      &::before {
+        /*content: "🟦";*/
+      }
+    }
+
+    li li li {
+      &::before {
+        /*content: "-";*/
+      }
+    }
+
+    a {
+      @apply transition-opacity hover:opacity-60;
+    }
+  }
+}

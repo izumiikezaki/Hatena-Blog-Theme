@@ -1,0 +1,184 @@
+/** サイドバーモジュール */
+.hatena-module {
+  @apply px-4 py-10 text-sm;
+
+  @variant sm {
+    @apply text-xs;
+  }
+  .hatena-module-title {
+    @apply mb-4 text-4xl tracking-wider font-display;
+    a {
+      @apply no-underline hover:underline;
+    }
+  }
+}
+
+/** プロフィール */
+.hatena-module-profile {
+  .hatena-module-body {
+    @apply flex flex-col items-center;
+
+    .profile-icon-link {
+      @apply mb-3 rounded-full bg-white p-1 shadow;
+      .profile-icon {
+        @apply rounded-full;
+      }
+    }
+
+    .id {
+      a.hatena-id-link {
+        @apply block font-bold;
+        @apply hover:text-gray-600;
+      }
+    }
+
+    .profile-activities {
+      @apply text-xs;
+    }
+
+    .profile-description {
+      @apply px-4 text-xs;
+    }
+
+    .profile-about {
+      @apply my-2;
+      a {
+        @apply block rounded-full border-1 border-gray-600 bg-gray-200/10 px-4 py-1.5 text-gray-600 transition-colors;
+        @apply hover:bg-gray-600 hover:text-white;
+      }
+    }
+  }
+}
+
+/** 検索 */
+.hatena-module-search-box {
+  .search-form {
+    @apply box-border flex w-full items-center rounded border border-gray-900;
+  }
+  .search-module-input {
+    @apply h-5 flex-1 border-0 p-1.5 text-gray-900 outline-none;
+  }
+  .search-module-button {
+    @apply mr-0.5 h-6 w-6 cursor-pointer overflow-hidden text-transparent opacity-50 hover:opacity-85;
+    @apply bg-svg-search;
+  }
+}
+
+/** リンク */
+.hatena-module-links {
+  ul.hatena-urllist {
+    @apply m-0 list-none p-0;
+    li {
+      @apply py-2;
+      a {
+        @apply no-underline hover:underline;
+      }
+    }
+  }
+}
+
+/** 最新記事, 注目記事, 関連記事 */
+.hatena-module-recent-entries,
+.hatena-module-entries-access-ranking,
+.hatena-module-related-entries {
+  ul.hatena-urllist {
+    @apply flex flex-col gap-4;
+
+    li.urllist-item {
+      .urllist-item-inner {
+        @apply relative grid min-h-[72px] md:min-h-[90px] pl-[calc(120px+8px)] md:pl-[calc(160px+16px)];
+        .urllist-date-link {
+          @apply absolute top-0 left-0 z-100 m-1 rounded-sm bg-white/50 px-1 py-0.5 text-xs text-gray-700 hover:bg-slate-200/70;
+        }
+
+        .urllist-image-link {
+          /*@apply  self-center block size-fit overflow-hidden;*/
+          /* スマホサイズだと親のパディング分も超えて配置 */
+          /*@apply -mx-4 max-w-[calc(100%+var(--spacing-4))];*/
+          /*@apply sm:mx-0 sm:max-w-full sm:rounded;*/
+          @apply absolute top-0 left-0 w-[120px] md:w-[160px] ;
+
+          img.urllist-image {
+            @apply !m-0 aspect-16/9 max-w-full object-cover;
+            @apply rounded;
+
+            /*overflow-hidden transition-transform duration-200 hover:scale-105;*/
+          }
+        }
+
+        .urllist-title-link {
+          @apply font-bold text-gray-800 hover:text-gray-600;
+        }
+
+        .urllist-categories {
+          @apply mt-1;
+          @apply flex flex-wrap gap-2;
+          a {
+            @apply styleset-category-badge;
+          }
+        }
+      }
+    }
+  }
+}
+
+/** 月別アーカイブ */
+.hatena-module-archive {
+  .archive-module-calendar {
+    @apply max-w-[320px] mx-auto;
+    select.archive-module-calendar-selector {
+      @apply rounded border-1 border-gray-300 bg-gray-200 py-1;
+    }
+    .calendar-day {
+      @apply p-1;
+      span,
+      a {
+        @apply px-1 py-1;
+      }
+      a {
+        @apply bg-primary/20 text-primary rounded-sm font-bold;
+      }
+    }
+  }
+}
+
+/** カテゴリー */
+.hatena-module-category {
+  .hatena-urllist {
+    @apply flex flex-wrap gap-2;
+    a {
+      @apply styleset-category-badge;
+    }
+  }
+}
+
+/** 最近のコメント */
+.hatena-module-recent-comments {
+  /** TODO:動作未確認 */
+  ul.hatena-urllist {
+    li {
+      @apply mb-2.5;
+      .hatena-id-icon {
+        @apply inline-block rounded-full;
+      }
+      & > a {
+        @apply no-underline hover:underline;
+      }
+    }
+  }
+}
+
+/** 参加グループ */
+.hatena-module-html {
+  /** TODO:動作未確認 */
+}
+
+/** 執筆者リスト */
+.hatena-module-authors-list {
+  /** TODO:動作未確認 */
+  .authors-user-icon {
+    @apply rounded-full;
+  }
+  .authors-user-name {
+  }
+}

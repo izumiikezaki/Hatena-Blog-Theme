@@ -1,0 +1,25 @@
+/* footer */
+#footer {
+  /*@apply h-[100vh] flex flex-col justify-end text-primary-d;*/
+  @apply py-8 text-center text-xs ;
+  @apply pt-12 bg-primary text-white;
+
+  #footer-inner {
+
+    .footer-address {
+      a {
+        @apply flex items-center justify-center gap-1;
+        img {
+          @apply inline-block;
+        }
+      }
+    }
+
+    a {
+    }
+
+    p {
+      @apply mx-auto my-2;
+    }
+  }
+}

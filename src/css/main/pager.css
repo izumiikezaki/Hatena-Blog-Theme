@@ -1,0 +1,35 @@
+/* Pager */
+.pager {
+    @apply border-y-1 divide-y-1 border-gray-700 divide-gray-700;
+  .pager-next,
+  .pager-prev {
+    @apply block;
+    a {
+      @apply block text-base w-full truncate px-10 py-4;
+      @apply text-gray-700;
+      @apply transition-colors hover:bg-primary-l/60 hover:text-white;
+    }
+  }
+
+  .pager-arrow {
+    @apply font-sans;
+    @apply inline-block transition-all px-1 text-3xl;
+  }
+  .pager-prev {
+    @apply text-left;
+    @variant hover {
+      a .pager-arrow {
+        @apply -translate-x-1;
+      }
+    }
+  }
+
+  .pager-next{
+    @apply text-right;
+    @variant hover {
+      a .pager-arrow {
+        @apply translate-x-1;
+      }
+    }
+  }
+}

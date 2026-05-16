@@ -1,0 +1,81 @@
+/* entry */
+.entry {
+  @apply px-4 py-2 w-full mx-auto;
+
+  .entry-inner {
+    .entry-header {
+      @apply mb-4 pb-4 relative;
+
+      /** 日付 */
+      .entry-date {
+        @apply mb-2 flex gap-2 text-xs font-bold;
+
+        a {
+          @apply text-gray-500 no-underline;
+        }
+
+        .date-last-updated {
+          @apply ml-0 flex items-center gap-0.5 text-gray-800/60;
+
+          svg {
+            @apply inline-block size-2.5;
+          }
+        }
+      }
+
+      .entry-title {
+        @apply mb-4 text-2xl font-bold;
+      }
+
+      .entry-categories {
+        @apply mb-4 flex flex-wrap gap-2;
+
+        a {
+          @apply styleset-category-badge;
+        }
+      }
+
+      /* 「編集する」ボタン */
+      .entry-header-menu {
+        @apply bg-primary absolute top-0 right-0 block rounded-xs px-2 py-0.5 text-white shadow transition-all;
+        @variant hover {
+          @apply hover:bg-accent;
+        }
+      }
+    }
+
+    /* 「続きを読む」ボタン */
+    .entry-see-more {
+      @apply text-primary border-2 border-primary/20 mx-auto my-8 block w-fit rounded-full border bg-gray-700/5 px-4 py-1 text-center text-base font-bold tracking-widest no-underline;
+      @apply hover:bg-primary border-primary transition-all hover:text-white;
+    }
+
+    /* 記事下 */
+    .entry-footer {
+      .entry-footer-section {
+        @apply mb-2 flex flex-wrap items-center justify-between gap-2 text-xs text-gray-800;
+
+        .entry-footer-time {
+          @apply flex-grow font-bold;
+        }
+
+        .entry-footer-subscribe {
+          @apply m-0 rounded-sm px-1.5 py-1 transition-colors hover:bg-white/60;
+        }
+      }
+
+      .google-afc-image {
+        @apply text-center;
+      }
+    }
+
+    .entry-header,
+    .entry-footer {
+      /** ソーシャルボタンはヘッダーにもフッターにも置ける **/
+
+      .social-buttons {
+        @apply mb-4 flex justify-center gap-1;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+/* container */
+#container {
+  /*@apply pt-[80vh];*/
+}
+#footer {
+  @apply w-full;
+}
+
+#container-inner {
+  @apply bg-mistic/80;
+  @apply relative w-full flex flex-col;
+
+  @variant lg {
+    /*
+    PC画面(中)~
+     */
+    @apply w-[640px];
+    @apply ml-auto mr-[60px];
+    @apply border-x-1 border-x-primary-d;
+  }
+
+  @variant xl {
+    /**
+    PC画面(大)~
+    コンテンツは中央に配置
+    */
+    @apply mx-auto;
+  }
+
+  header#blog-title {
+    @apply w-full;
+    /*@apply absolute bottom-[100%];*/
+  }
+
+  /** 上部のカスタムHTML **/
+  #top-editarea {
+    @apply order-first;
+  }
+
+  /** パンくずリスト等 **/
+  #top-box {
+    @apply p-4
+  }
+
+  /** メインコンテンツ **/
+  #content {
+  }
+
+  /** 下部のカスタムHTML **/
+  #bottom-editarea {
+  }
+}
+
+#content-inner {
+  #main {
+    @apply bg-white;
+  }
+
+  #box2 {
+    @apply bg-mistic;
+  }
+}

@@ -1,0 +1,41 @@
+/* ヘッダ */
+#blog-title {
+  @apply text-center;
+
+  #title {
+    @apply m-0 text-2xl  font-serif font-thin tracking-widest;
+
+    @variant md {
+      @apply text-3xl;
+    }
+  }
+
+  #blog-description {
+    @apply mb-0 text-xs tracking-wider;
+    &::before {
+      @apply content-['―'];
+    }
+    &::after {
+      @apply content-['―'];
+    }
+  }
+}
+
+ /*ヘッダ画像を設定したとき*/
+/*.header-image-enable {*/
+/*    #blog-title {*/
+/*        #blog-title-inner {*/
+/*            @apply bg-contain bg-no-repeat;*/
+/*        }*/
+/*        #blog-title-content {*/
+/*        }*/
+/*    }*/
+/*}*/
+
+/** ヘッダ画像のみ設定したとき */
+.header-image-only {
+    #blog-title-inner {
+        @apply bg-contain max-h-[128px] bg-center!;
+    }
+}
+

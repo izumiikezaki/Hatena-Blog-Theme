@@ -2,7 +2,11 @@
 .comment-box {
   @apply my-4;
   .comment {
-    @apply m-0 mb-3.5 list-none p-0 text-[0.85rem] leading-[1.7] sm:text-[0.9rem];
+    @apply m-0 mb-3.5 list-none p-0 text-[0.85rem] leading-[1.7];
+
+    @variant sm {
+      @apply text-[0.9rem];
+    }
 
     .entry-comment {
       @apply relative border-b border-gray-200 py-2.5 pl-15;
@@ -43,6 +47,6 @@
 
   /* 「コメントを書く」ボタン */
   .leave-comment-title {
-    @apply ml-auto block w-fit rounded border border-gray-200 px-4 py-2.5 text-xs text-gray-600 transition-all hover:bg-gray-200;
+    @apply ml-auto block w-fit rounded border border-gray-400 px-4 py-2.5 text-xs text-gray-600 transition-all hover:bg-white/60 hover:text-gray-700 hover:border-white;
   }
 }
